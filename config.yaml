@@ -1,0 +1,105 @@
+# Configuration for Malaria and TB Diagnosis System
+
+# Model Settings
+models:
+  malaria:
+    name: "MalariaDetectionCNN"
+    input_size: [224, 224, 3]
+    model_path: "models/malaria_model.h5"
+    architecture: "custom_cnn"
+    classes: ["Healthy", "Malaria"]
+    
+  tb:
+    name: "TBDetectionCNN"
+    input_size: [224, 224, 3]
+    model_path: "models/tb_model.h5"
+    architecture: "custom_cnn"
+    classes: ["Healthy", "TB-Positive"]
+
+# Image Processing Settings
+image_processing:
+  malaria:
+    normalize: true
+    augmentation: true
+    clahe_enabled: true
+    blur_kernel: 5
+    channels: 3
+    
+  tb:
+    normalize: true
+    augmentation: true
+    clahe_enabled: true
+    blur_kernel: 5
+    channels: 1
+
+# Training Settings
+training:
+  batch_size: 32
+  epochs: 100
+  validation_split: 0.2
+  test_split: 0.1
+  learning_rate: 0.001
+  optimizer: "adam"
+  loss_function: "categorical_crossentropy"
+  early_stopping_patience: 15
+  data_augmentation:
+    rotation_range: 20
+    width_shift_range: 0.2
+    height_shift_range: 0.2
+    horizontal_flip: true
+    zoom_range: 0.2
+
+# Inference Settings
+inference:
+  confidence_threshold: 0.7
+  gpu_enabled: true
+  batch_size: 32
+  return_top_n: 2
+
+# API Settings
+api:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  max_upload_size_mb: 10
+  allowed_formats: ["jpg", "jpeg", "png", "bmp", "tiff"]
+  cors_enabled: true
+
+# Database Settings
+database:
+  type: "sqlite"
+  path: "data/diagnoses.db"
+  log_predictions: true
+
+# Logging
+logging:
+  level: "INFO"
+  log_file: "logs/app.log"
+  max_size_mb: 100
+  backup_count: 5
+
+# Data Paths
+data_paths:
+  malaria_train: "data/malaria/train"
+  malaria_test: "data/malaria/test"
+  malaria_val: "data/malaria/val"
+  tb_train: "data/tb/train"
+  tb_test: "data/tb/test"
+  tb_val: "data/tb/val"
+  models_dir: "models"
+  results_dir: "results"
+
+# Feature Flags
+features:
+  batch_processing: true
+  result_export: true
+  statistics_dashboard: true
+  model_interpretability: true
+  confidence_calibration: true
+
+# Security
+security:
+  require_authentication: false
+  enable_https: false
+  api_key_required: false
+  anonymous_mode: true

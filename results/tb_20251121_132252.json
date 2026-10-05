@@ -1,0 +1,17 @@
+{
+    "disease": "Tuberculosis",
+    "prediction": "Healthy",
+    "confidence": 0.6300418376922607,
+    "confidence_level": "Medium",
+    "probabilities": {
+        "Healthy": 0.6300418376922607,
+        "TB-Positive": 0.3699580729007721
+    },
+    "image_path": "uploads\\tb_1763727767.352483_atypical_1_thumb.jpg",
+    "recommendation": "\u26a0\ufe0f DISCLAIMER: This is an AI-assisted diagnosis. Results must be verified by a qualified healthcare professional.\n\n\ud83d\udfe1 MODERATE CONFIDENCE: No clear TB signs, but recommend specialist review if symptomatic.",
+    "warning": null,
+    "is_test_image": false,
+    "prediction_flipped": false,
+    "timestamp": "2025-11-21T13:22:52.841227",
+    "filename": "tb_1763727767.352483_atypical_1_thumb.jpg"
+}

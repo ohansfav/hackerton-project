@@ -1,0 +1,17 @@
+{
+  "malaria_model": {
+    "accuracy": 1.0,
+    "c_index": 0.5,
+    "avg_confidence": 0.5366344385676913
+  },
+  "tb_model": {
+    "accuracy": 0.0,
+    "c_index": 0.5,
+    "avg_confidence": 0.630023181438446
+  },
+  "algorithms": {
+    "Neural Network": 1.0,
+    "Gradient Boosting": 0.0,
+    "KNN": 1.0
+  }
+}

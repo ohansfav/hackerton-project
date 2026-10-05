@@ -1,0 +1,15 @@
+{
+    "disease": "Malaria",
+    "prediction": "Malaria",
+    "confidence": 0.5391220450401306,
+    "confidence_level": "Low",
+    "probabilities": {
+        "Healthy": 0.4608779549598694,
+        "Malaria": 0.5391220450401306
+    },
+    "image_path": "uploads\\malaria_1763727732.460227_h0186.png",
+    "recommendation": "\u26a0\ufe0f DISCLAIMER: This is an AI-assisted diagnosis. Results must be verified by a qualified healthcare professional.\n\n\ud83d\udfe1 MODERATE CONFIDENCE: Possible malaria infection. Recommend further testing.",
+    "warning": "Low confidence - recommend clinical review",
+    "timestamp": "2025-11-21T13:22:16.933167",
+    "filename": "malaria_1763727732.460227_h0186.png"
+}

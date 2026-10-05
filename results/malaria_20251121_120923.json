@@ -1,0 +1,13 @@
+{
+    "disease": "Malaria",
+    "prediction": "Malaria",
+    "confidence": 0.5373139381408691,
+    "probabilities": {
+        "Healthy": 0.46268606185913086,
+        "Malaria": 0.5373139381408691
+    },
+    "image_path": "uploads\\malaria_1763723363.001446_C100P61ThinF_IMG_20150918_144104_cell_65.png",
+    "recommendation": "\u26a0\ufe0f DISCLAIMER: This is an AI-assisted diagnosis. Results must be verified by a qualified healthcare professional.\n\n\ud83d\udfe1 MODERATE CONFIDENCE: Possible malaria infection. Recommend further testing.",
+    "timestamp": "2025-11-21T12:09:23.356457",
+    "filename": "malaria_1763723363.001446_C100P61ThinF_IMG_20150918_144104_cell_65.png"
+}
